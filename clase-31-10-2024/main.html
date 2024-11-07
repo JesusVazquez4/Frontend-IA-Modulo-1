@@ -82,8 +82,29 @@
     <h3>Enlazamos comunicación con GitHub</h3>
     <p>Conectamos con nuestro repositorio de GitHub con el enlace que hemos copiado y el siguiente comando:</p>
     <pre>
-        git remote add origin https://github.com/JavierVazquez4/Frontend-IA-Modulo-1.git
+        git remote add origin https://github.com/JesusVazquez4/Frontend-IA-Modulo-1.git
     </pre>
-    <p>Con esto se conectar los repositorios local con el virtual.</p>
+    <h3>Envío</h3>
+    <p>Para que se envie el proyecto a GitHub, usamos el siguiente comando:</p>
+    <pre>
+        git push -u origin main
+    </pre>
+    <p>Y en algunos casos el origen esta ubicado en master y esta en master, en cuyo caso se usa:</p>
+    <pre>
+        git push -u origin master
+    </pre>
+    <p>Esto esta relacionado con las ramas, lo que checamo en que rama esta activa con el siguiente comando:</p>
+    <pre>
+        git branch
+    </pre>
+    <p>En este caso, la rama activa es main.</p>
+    <p>Si queremos cambiar la rama activa, usamos el siguiente comando:</p>
+    <pre>
+        git checkout -b nombre_rama
+    </pre>
+    <p>Por ejemplo, para cambiar la rama activa a master, usamos el comando:</p>
+    <pre>
+        git checkout -b master
+    </pre>
 </body>
 </html>
