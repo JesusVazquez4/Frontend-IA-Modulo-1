@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 31-10-2024</title>
+</head>
+<body>
+    <h1>Proceso para crear un repositorio en GitHub</h1>
+    <p>Para ver la versión de git instalada y con ello confirmar que quedó instalado bien usamos el comando.</p>
+    <pre>
+        git -v
+    </pre>
+    <p>También con el comando</p>
+    <pre>
+        git --version
+    </pre>
+    <h2>Configurando git</h2>
+    <p>Para configurar el nombre de usuario de git en la terminal usamos</p>
+    <pre>
+        git config --global user.name "Nombre de usuario"
+    </pre>
+    <p>Para configurar el correo de usuario de git en la terminal usamos</p>
+    <pre>
+        git config --global user.email "Correo de usuario"
+    </pre>
+    <p>Esto solo se ejecuta una vez por sesión.</p>
+    <p>Para ver la configuración de git en la terminal usamos</p>
+    <pre>git config --list</pre>
+    <p>Es importante corroborar que apareca el nombre de usuario y el correo. Tenemos que dar enter hasta que se muestre el listado completo.</p>
+    <h2>Crear un repositorio en GitHub</h2>
+    <p>Ahora creamos un repositorio en GitHub. Y compiamos el enlace al repositorio, el que está en HTTPS.</p>
+    <p>El enlace al repositorio es: https://github.com/JesusVazquez4/Frontend-IA-Modulo-1.git</p>
+    <br>
+    <p>
+        Para lo que sigue debemos de tener cuidado de que al usar la terminal que estemos usando, 
+        estar en la carpeta del proyeto que vamos a subir en el repositorio en GitHub.
+    </p>
+    <h2>Subir al repositorio</h2>
+    <h3>Empaquetado</h3>
+    <p>Primero preparamos lo que vamos a enviar al repositorio, para eso le decimos primero a Git que vamos a estar trabajando en la carpeta actual, que es la carperta que contiene los archivos a subir. Para ello usamos el siguiente comando, que hará un repositorio vació:</p>
+    <pre>
+        git init
+    </pre>
+    <p>Este comando, de git init, solo se hace una por proyecto.</p>
+    <p>Ahora para "empaquetar" lo que vamos a subir, usamos el siguiente comando:</p>
+    <pre>
+        git add .
+    </pre>
+    <p>En el caso de que solo queramos subir un archivo usamos el siguiente comando:</p>
+    <pre>
+        git add archivo.txt
+    </pre>
+    <p>Por ejemplo, aquí solo empaquetamos el archivo "archivo.txt".</p>
+    <p>Ahora para ver cuales son los cambios que queremos enviar usamos el comando:</p>
+    <pre>
+        git status
+    </pre>
+    <p>En el caso de que solo queramos ver los cambios de un solo archivo es con el siguiente comando:</p>
+    <pre>
+        git status archivo.txt
+    </pre>
+    <h3>Commit</h3>
+    <p>Ahora vamos a hacer un commit, para eso usamos el siguiente comando:</p>
+    <pre>
+        git commit -m "Comentario"
+    </pre>
+    <p>En el caso de que solo queramos hacer un commit de un archivo es con el siguiente comando:</p>
+    <pre>
+        git commit -m "Comentario" archivo.txt
+    </pre>
+    <p>En el caso de que queramos hacer un commit de todos los archivos es con el siguiente comando:</p>
+    <pre>
+        git commit -m "Comentario" *
+    </pre>
+    <p>La parte del comentario es importante se específico para saber que clase de cambio se hizo.</p>
+</body>
+</html>
