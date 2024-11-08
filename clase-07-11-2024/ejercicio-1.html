@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi práctica de HTML semántico</title>
+</head>
+<body>
+    <!-- Header es la sección superrio de la página y generalmente incluye información introductoria,
+     como el título de la página y el menú de navegación -->
+     <header>
+        <h1>Bienvenidos a mi sitio web</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li>Sobre mi</li>
+                <li>Intereés</li>
+                <li>Enlaces</li>
+            </ul>
+        </nav>
+     </header>
+     <!-- main es la sección principal que tiene el contenido principal de la página.
+      Se recomienda usar main solo una vez en cada página para indicar la parte más 
+      importante del documento.-->
+      <main>
+        <section>
+            <h2>Sobre mi</h2>
+            <p>Me llamó Jesús Vázquez y soy un desarrollador web</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aperiam, hic atque quas perferendis eius nisi quod quibusdam provident dolor minima incidunt harum in quisquam, laborum iure architecto blanditiis pariatur!</p>
+        </section>
+        <section>
+            <h2>Interés</h2>
+            <ul>
+                <li>Programación</li>
+                <li>Música</li>
+                <li>Física y Matemáticas</li>
+                <li>Arduino</li>
+                <li>Criptomonedas</li>
+            </ul>
+
+            <!-- figure agrupa contenido visual como imágenes, y es común utilizarla en conjunto con la
+             etiqueta figcaption, que proporciona un título o descripción del contenido visual -->
+             <figure>
+                <img src="./img/cripto.jpeg" alt="Criptomonedas más usadas en el mercado">
+                <figcaption>Criptomonedas más usadas en el mercado. Bitcoin y Litecoin.</figcaption>
+             </figure>
+        </section>
+        <section>
+            <h2>Enlaces</h2>
+            <p>Visita esto sitios recomendados para aprender desarrollo web</p>
+            <ul>
+                <!-- a es una etiqueta de enlace que generalmente viene acompañada del atributo href
+                  donde agregamos la dirección a la cual queremos redireccionar, otro atributo
+                  comunmente utilizado es el de target que da un control de cómo se va a abrir el enlace -->
+                <li>
+                    <a href="https://pathfinder.w3schools.com/" target="_blank">W3Schools</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a>
+                </li>
+                <li>
+            </ul>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Jesús Vázquez. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>
