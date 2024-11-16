@@ -52,6 +52,14 @@
         git add archivo.txt
     </pre>
     <p>Por ejemplo, aquí solo empaquetamos el archivo "archivo.txt".</p>
+    <p>En el caso de que nos arrepintamos de los archivos que ya empaquetamos con el git add ., podemos retroceder en este punto con lo siguiente: </p>
+    <pre>
+        git reset "nombre_del_archivo"
+    </pre>
+    <p>En el  caso que sean todos los archivos usamos el siguiente comando:</p>
+    <pre>    
+        git reset .
+    </pre>
     <p>Ahora para ver cuales son los cambios que queremos enviar usamos el comando:</p>
     <pre>
         git status
